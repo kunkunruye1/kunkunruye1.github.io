@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>万蝶大师在线给您算姻缘</title>
+  </head>
+  <body>
+    <h1>万蝶大师在线给您算姻缘</h1>
+    <h2>你觉得界面换个颜色怎么样</h2>
+    <form>
+      <label for="birthday">请输入你的生日：</label>
+      <input type="date" id="birthday" name="birthday">
+      <br>
+      <button type="button" onclick="calculate()">计算星座</button>
+      <br>
+      <p>你的星座是：<span id="result"></span></p>
+    </form>
+
+    <script>
+      function calculate() {
+        // 获取输入框中的生日日期
+        const birthday = document.getElementById("birthday").value;
+
+        // 提取出月份和日期的数字值
+        const month = parseInt(birthday.slice(5, 7));
+        const day = parseInt(birthday.slice(8, 10));
+
+        // 计算星座并将结果输出到页面上
+        let result;
+        if ((month == 1 && day >= 20) || (month == 2 && day <= 18)) {
+          result = "水瓶座";
+        } else if ((month == 2 && day >= 19) || (month == 3 && day <= 20)) {
+          result = "双鱼座";
+        } else if ((month == 3 && day >= 21) || (month == 4 && day <= 19)) {
+          result = "白羊座";
+        } else if ((month == 4 && day >= 20) || (month == 5 && day <= 20)) {
+          result = "金牛座";
+        } else if ((month == 5 && day >= 21) || (month == 6 && day <= 21)) {
+          result = "双子座";
+        } else if ((month == 6 && day >= 22) || (month == 7 && day <= 22)) {
+          result = "巨蟹座";
+        } else if ((month == 7 && day >= 23) || (month == 8 && day <= 22)) {
+          result = "狮子座";
+        } else if ((month == 8 && day >= 23) || (month == 9 && day <= 22)) {
+          result = "处女座";
+        } else if ((month == 9 && day >= 23) || (month == 10 && day <= 23)) {
+          result = "天秤座";
+        } else if ((month == 10 && day >= 24) || (month == 11 && day <= 22)) {
+          result = "天蝎座";
+        } else if ((month == 11 && day >= 23) || (month == 12 && day <= 21)) {
+          result = "射手座";
+        } else {
+          result = "摩羯座";
+        }
+
+        // 将结果输出到页面上
+        document.getElementById("result").innerHTML = result;
+      }
+    </script>
+  </body>
+</html>
