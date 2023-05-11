@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap栅格系统</title>
+    <!-- 直接从Bootstrap网站导入CSS文件, 或者将Bootstrap下载到本地 -->
+    <link rel="stylesheet" href=
+            "https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        div {
+            border: solid 2px red;
+            heiget: 100px;
+        }
+        </style>
+</head>
+<body>
+    <!-- 栅格系统, 会将网页分为12等份(宽层), 设置最外层的Div的宽度为1200px, 每一份就是100px -->
+    <!-- 三层: 模拟<table><tr><td>, 第一层: 必须指定为container属性, 第二层: 必须指定row属性-->
+    <div class="container">
+         <div class="row">
+             <div style="border: solid 5px blue; width: 30%"></div>
+             <div style="border: solid 5px blue; width: 30%"></div>
+             <div style="border: solid 5px blue; width: 30%"></div>
+
+         </div>
+
+    </div>
+
+</body>
+</html>
