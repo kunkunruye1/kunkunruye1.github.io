@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>登录</title>
+    <style>
+        .c1{
+            color:red;
+        }
+        .c2{
+            color:blue;
+        }
+    </style>
 </head>
 <body>
 <form method="post" action="/login">
     <div>
-        <h1 style="text-align: center;">
+        <h1 class="c1" style="text-align: center;">
             用户登录
         </h1>
     </div>
     <div>
-    <h4>
-        <input style="color: red; background-color: #00ff00;" type="text" placeholder="用户名" name="user">
-        <input style="color: blue; background-color: #dc3545;" type="password" placeholder="密码" name="pwd">
+    <h4 class="c2">
+<!--        <input style="color: red; background-color: #00ff00;" type="text" placeholder="用户名" name="user">-->
+<!--        <input style="color: blue; background-color: #dc3545;" type="password" placeholder="密码" name="pwd">-->
+        <input type="text" placeholder="用户名" name="user">
+        <input type="password" placeholder="密码" name="pwd">
     </h4>
     </div>
     <div>
